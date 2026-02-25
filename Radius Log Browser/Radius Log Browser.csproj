@@ -59,7 +59,7 @@
     <ApplicationIcon>1475595758_Gnome-Logviewer-64.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>32DD185C49704C7265700788606C2840332A2B90</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FE7358BAC4CD7103939E83065D31F75243EB95F4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Radius Log Browser_TemporaryKey.pfx</ManifestKeyFile>
@@ -69,6 +69,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Radius Log Browser_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
