@@ -52,6 +52,7 @@
             this.btnApplyFilter = new System.Windows.Forms.Button();
             this.btnClearFilter = new System.Windows.Forms.Button();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.copyMacAddressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -89,14 +90,15 @@
             this.cmRemoveSearch,
             this.cmSearchSep,
             this.cmCopy,
+            this.copyMacAddressToolStripMenuItem,
             this.clearToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 142);
             // 
             // cmSearch
             // 
             this.cmSearch.Name = "cmSearch";
-            this.cmSearch.Size = new System.Drawing.Size(154, 22);
+            this.cmSearch.Size = new System.Drawing.Size(180, 22);
             this.cmSearch.Text = "Search on";
             this.cmSearch.Visible = false;
             this.cmSearch.Click += new System.EventHandler(this.cmSearch_Click);
@@ -104,7 +106,7 @@
             // cmRemoveSearch
             // 
             this.cmRemoveSearch.Name = "cmRemoveSearch";
-            this.cmRemoveSearch.Size = new System.Drawing.Size(154, 22);
+            this.cmRemoveSearch.Size = new System.Drawing.Size(180, 22);
             this.cmRemoveSearch.Text = "Remove search";
             this.cmRemoveSearch.Visible = false;
             this.cmRemoveSearch.Click += new System.EventHandler(this.cmRemoveSearch_Click);
@@ -112,21 +114,21 @@
             // cmSearchSep
             // 
             this.cmSearchSep.Name = "cmSearchSep";
-            this.cmSearchSep.Size = new System.Drawing.Size(151, 6);
+            this.cmSearchSep.Size = new System.Drawing.Size(177, 6);
             // 
             // cmCopy
             // 
             this.cmCopy.Enabled = false;
             this.cmCopy.Name = "cmCopy";
             this.cmCopy.ShortcutKeyDisplayString = "Ctrl+C";
-            this.cmCopy.Size = new System.Drawing.Size(154, 22);
+            this.cmCopy.Size = new System.Drawing.Size(180, 22);
             this.cmCopy.Text = "Copy";
             this.cmCopy.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
@@ -165,7 +167,7 @@
             // selectFileToolStripMenuItem
             // 
             this.selectFileToolStripMenuItem.Name = "selectFileToolStripMenuItem";
-            this.selectFileToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.selectFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selectFileToolStripMenuItem.Text = "Select File";
             this.selectFileToolStripMenuItem.Click += new System.EventHandler(this.selectFileToolStripMenuItem_Click);
             // 
@@ -174,32 +176,32 @@
             this.cbScroll.Checked = true;
             this.cbScroll.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbScroll.Name = "cbScroll";
-            this.cbScroll.Size = new System.Drawing.Size(166, 22);
+            this.cbScroll.Size = new System.Drawing.Size(180, 22);
             this.cbScroll.Text = "Auto Scroll Down";
             this.cbScroll.Click += new System.EventHandler(this.cbScroll_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -322,6 +324,13 @@
             this.btnClearFilter.UseVisualStyleBackColor = true;
             this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click_1);
             // 
+            // copyMacAddressToolStripMenuItem
+            // 
+            this.copyMacAddressToolStripMenuItem.Name = "copyMacAddressToolStripMenuItem";
+            this.copyMacAddressToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.copyMacAddressToolStripMenuItem.Text = "Copy Mac Address";
+            this.copyMacAddressToolStripMenuItem.Click += new System.EventHandler(this.copyMacAddressToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,5 +388,6 @@
         private System.Windows.Forms.CheckBox chkTo;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem copyMacAddressToolStripMenuItem;
     }
 }

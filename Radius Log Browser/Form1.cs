@@ -235,7 +235,7 @@ namespace Radius_Log_Browser
                 }
             }
 
-            this.Invoke(new MethodInvoker(async delegate
+            this.Invoke(new MethodInvoker(delegate
             {
                 // master cache ekle
                 _rows.AddRange(newRows);
@@ -532,7 +532,10 @@ namespace Radius_Log_Browser
         {
             CopySelectedValuesToClipboard();
         }
-
+        private void copyMacAddressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CopySelectedValuesToClipboardforMacAddress();
+        }
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lvLogTable.Items.Clear();
@@ -675,6 +678,20 @@ namespace Radius_Log_Browser
                     item.SubItems[6].Text + "\t" +
                     item.SubItems[7].Text + "\t" +
                     item.SubItems[8].Text
+                );
+            }
+
+            if (builder.Length > 0)
+                Clipboard.SetText(builder.ToString());
+        }
+
+        private void CopySelectedValuesToClipboardforMacAddress()
+        {
+            var builder = new StringBuilder();
+            foreach (ListViewItem item in lvLogTable.SelectedItems)
+            {
+                builder.AppendLine(
+                    item.SubItems[5].Text.ToMacAddress()
                 );
             }
 

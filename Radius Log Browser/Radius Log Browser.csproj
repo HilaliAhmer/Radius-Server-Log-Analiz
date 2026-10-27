@@ -29,7 +29,7 @@
     <SuiteName>Selahattin Açıkgöz</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -59,7 +59,7 @@
     <ApplicationIcon>1475595758_Gnome-Logviewer-64.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FE7358BAC4CD7103939E83065D31F75243EB95F4</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>8D92381919CD5F473479814A78AF40D681259874</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Radius Log Browser_TemporaryKey.pfx</ManifestKeyFile>
@@ -74,7 +74,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Radius Log Browser_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -107,6 +108,7 @@
       <DependentUpon>help.cs</DependentUpon>
     </Compile>
     <Compile Include="ListViewColumnSorter .cs" />
+    <Compile Include="MacExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadiusRequest.cs" />
